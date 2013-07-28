@@ -73,6 +73,10 @@ h6 { font-size: 0.9em; line-height:$baseline;}
   @include columns($text-column-gutter-width 4);
 }
 
+.text-uppercase{
+  text-transform:uppercase;
+}
+
 
 //font families
 
