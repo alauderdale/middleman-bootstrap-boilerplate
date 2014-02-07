@@ -1,5 +1,21 @@
 @import 'bourbon/bourbon';
 
+
+//fonts
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 // color vars
 
 $primary-color: #5a0155;
@@ -13,6 +29,7 @@ $black-color:#2a2929;
 $regular-font-name:"Helvetica Neue", Helvetica, Arial, sans-serif;
 $bold-font-name:"Helvetica Neue", Helvetica, Arial, sans-serif;
 $paragraph-font-name:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$social-font-name: 'socialicoregular';
 
 // baseline
 
@@ -167,6 +184,18 @@ ul.inline{
 .double-margin-left {
   margin-left: $baseline*2 !important;
 }
+.triple-margin-top {
+  margin-top: $baseline*3 !important;
+}
+.triple-margin-right {
+  margin-right: $baseline*3 !important;
+}
+.triple-margin-bottom {
+  margin-bottom: $baseline*3 !important;
+}
+.triple-margin-left {
+  margin-left: $baseline*3 !important;
+}
 .half-margin-top {
   margin-top: $baseline/2 !important;
 }
@@ -226,6 +255,9 @@ ul.inline{
 .padding-left {
   padding-left: $baseline !important;
 }
+.double-padded {
+  padding: $baseline*2 !important;
+}
 .double-padding-top {
   padding-top: $baseline*2 !important;
 }
@@ -237,6 +269,18 @@ ul.inline{
 }
 .double-padding-left {
   padding-left: $baseline*2 !important;
+}
+.triple-padding-top {
+  padding-top: $baseline*3 !important;
+}
+.triple-padding-right {
+  padding-right: $baseline*3 !important;
+}
+.triple-padding-bottom {
+  padding-bottom: $baseline*3 !important;
+}
+.triple-padding-left {
+  padding-left: $baseline*3 !important;
 }
 .no-padding {
   padding: 0px !important;
@@ -285,6 +329,7 @@ ul.inline{
 }
 
 
+
 // Clearing
 
 .clearfix:after {
@@ -300,3 +345,27 @@ ul.inline{
 
 
 //bootstrap overrides
+
+
+
+//responsify
+
+@media (max-width: 1199px) {
+
+
+
+}
+
+
+@media (max-width: 991px) {
+
+
+
+}
+
+
+
+@media (max-width: 767px) {
+
+
+}
